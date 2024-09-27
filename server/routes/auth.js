@@ -86,6 +86,16 @@ router.post('/login', async (req, res) => {
 });
 
 // =============================
+// Logout Route
+// =============================
+router.post('/logout', (req, res) => {
+  // Client should remove the JWT from local storage or cookies
+  // This route is simply a placeholder in case you want to implement server-side token invalidation
+  
+  res.status(200).json({ msg: 'User logged out successfully' });
+});
+
+// =============================
 // Password Recovery - Request Reset Link
 // =============================
 router.post('/forgot-password', async (req, res) => {
